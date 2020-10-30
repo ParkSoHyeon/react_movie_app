@@ -1,0 +1,64 @@
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.info-container {
+    width: 40%;
+    padding-right: 70px;
+}
+
+.info-container .info__title {
+    margin-bottom: 30px;
+}
+
+.info-container .info__rating {
+    margin-bottom: 30px;
+}
+
+.info-container .info__genres {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0px;
+    margin-bottom: 30px;
+}
+
+.info-container .info__summary {
+    color: #919191;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.info__genres li,
+.info-container .info__year {
+    margin-right: 10px;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.poster-container {
+    width: 20%;
+}
+
+@media screen and (max-width: 1090px) {
+    .container {
+        flex-direction: column;
+    }
+    .info-container {
+        width: 100%;
+    }
+
+    .poster-container {
+        width: 100%;
+        text-align: center;
+    }
+}
